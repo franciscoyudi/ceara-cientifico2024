@@ -1,0 +1,148 @@
+@font-face {
+    font-family: feminineidea;
+    src: url(../fontes/SunshineTropical.ttf);
+}
+
+@font-face {
+    font-family: cursiva;
+    src: url(../fontes/HelloValentina.ttf);
+}
+
+@font-face {
+    font-family: paragrafos;
+
+    src: url(../fontes/MasterFlash.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.navbar{
+    --bs-navbar-toggler-focus-width: 0rem !important;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body,
+html {
+    height: 100dvh;
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-dashboard header {
+    width: 100%;
+    height: 60px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+    background-color: #fd4040;
+    box-shadow: 2px 2px 22px rgba(0, 0, 0, 0.596);
+}
+
+header .nav {
+    margin-top: 3px;
+    margin-right: 70px;
+    margin-left: auto;
+}
+
+.dashboard {
+    padding-bottom: 90px;
+}
+
+.main-dashboard header .login,
+.noti,
+.config {
+    margin: 0px 10px;
+    z-index: 12031;
+    transition: transform 200ms ease-in-out;
+}
+
+.main-dashboard header .login:hover,
+.noti:hover,
+.config:hover {
+    transform: scale(1.2);
+}
+
+
+#logo {
+    transform: scale(3.5);
+    margin-left: 60px;
+    margin-top: -10px;
+    height: 50px;
+    filter: invert(100%);
+}
+
+/*BARRA DE NAVEGAÇÃO*/
+
+.container-fluid {
+    width: 50px;
+    margin-right: 25px;
+
+}
+
+.offcanvas-header #logo {
+    margin: 0px;
+}
+
+.offcanvas-header h5 {
+    font-family: feminineidea;
+    font-size: 1.8em;
+    letter-spacing: 3px;
+}
+
+.offcanvas-body {
+    padding: 16px 0px;
+}
+
+.pe-3 {
+    padding: 0rem !important;
+
+}
+
+.nav-link {
+    color: white;
+    padding: 10px 20px;
+    font-family: paragrafos;
+    letter-spacing: 1px;
+    transition: padding 200ms ease-in-out;
+}
+.navbar-toggler:active{
+    border: none;
+}
+.nav-item {
+    width: 100%;
+}
+
+.nav-item:hover {
+    background-color: #ad2c2c;
+}
+
+.nav-item:hover a.nav-link{
+    padding: 10px 30px;
+}
+.offcanvas-body,
+.offcanvas-header {
+    border-left: 2px solid white;
+}
+
+/*^BARRA DE NAVEGAÇÃO^*/
+
+@media (width < 1000px) {
+    body {
+        background-position-x: 0%;
+    }
+}
+#logo img{
+    transform: scale(1.4);
+}

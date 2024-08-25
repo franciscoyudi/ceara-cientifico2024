@@ -1,0 +1,136 @@
+@font-face {
+    font-family: feminineidea;
+    src: url(../fontes/SunshineTropical.ttf);
+}
+@font-face {
+    font-family: cursiva;
+    src: url(../fontes/HelloValentina.ttf);
+}
+@font-face {
+    font-family: paragrafos;
+
+    src: url(../fontes/MasterFlash.otf);
+}
+.main-dashboard .dashboard h1{
+    font-size: 1.6em;
+    margin-left: 10px;
+    margin-top: 3px;
+}
+section .paragrafo{
+    font-size: 3em;
+    font-family: cursiva;
+text-align: center;
+    padding: 10px 20px;
+}
+.div-videoaula{
+    margin-left: 30px; 
+    font-family: paragrafos;
+    letter-spacing: 1px;
+}
+#video-aulas{
+    width: 100%;
+
+    margin-bottom: 30px;
+}
+.div-videoaula{
+    margin-left: 30px;
+}
+.cards-videoaulas{
+    display: flex;
+    flex-wrap: wrap;
+    filter: drop-shadow(3px 3px 10px rgba(0, 0, 0, 0.616)); 
+}
+::-webkit-scrollbar{
+    background: rgba(0, 0, 0, 0);
+}
+.videoaula-thumb {
+    width: 438.2px;
+    height: 245px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: black;
+    border-radius: 20px;
+}
+.videoaula-channel{
+    font-size: 1.4em;
+    margin: 15px 0px;
+    width: fit-content;
+}
+.videoaula-description{
+    width: 100%;
+    font-size: 1em;
+    line-height: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(110, 89, 74);
+    margin-top: -29px;
+}
+.videoaula-button-play{
+    background: url(../img/btn\ play.png) no-repeat;
+    justify-self: end;
+    background-position: 45% 50%;
+    background-size: 370%;
+    clip-path: circle();
+    width: 70px;
+    height: 70px;
+    margin-top: -15px;
+    cursor: pointer;
+    transition: transform 300ms ease-in;
+    transition: filter 300ms ease-in;
+}
+.videoaula-button-play:hover{
+    filter: brightness(80%);
+    transform: scale(0.95);
+}
+#backToTopBtn {
+    display: none;
+    /* Ocultar o botão inicialmente */
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: rgb(143, 34, 34);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+  }
+  
+#backToTopBtn:hover {
+    background-color: rgb(116, 26, 26);
+  }
+
+@media(width <1424px){
+    .videoaula-thumb{
+        width: 400px;
+    }
+}
+@media(width <1313px){
+    .videoaula-thumb{
+        width: 350px;
+    }
+    .videoaula-channel{
+        font-size: 1.1em;
+    }
+}
+@media(width <1092px){
+    .videoaula-thumb{
+        width: 408.2px;
+    }
+}
+@media(width < 894px){
+    .videoaula-thumb{
+        width: 328.2px;
+    }
+}
+@media(width <734px){
+    .videoaula-thumb{
+        width: 328.2px;
+    }
+}

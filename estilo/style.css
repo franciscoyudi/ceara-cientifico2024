@@ -1,0 +1,205 @@
+@font-face {
+    font-family: feminineidea;
+    src: url(../fontes/SunshineTropical.ttf);
+}
+@font-face {
+    font-family: cursiva;
+    src: url(../fontes/HelloValentina.ttf);
+}
+@font-face {
+    font-family: paragrafos;
+
+    src: url(../fontes/MasterFlash.otf);
+}
+.main-dashboard{
+    padding-bottom: 20px;
+}
+
+.dashboard h1{
+    font-family: cursiva;
+    font-size: 3em;
+    margin-left: 10px;
+    margin-top: 3px;
+    width: fit-content;
+line-height: 35px;
+}
+section .paragrafo{
+    font-size: 1.4em;
+    font-family: paragrafos;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+
+}
+#famosas .card-mulher{
+    height: fit-content;
+    width: fit-content;
+    cursor: pointer;
+    transition: transform 200ms ease-in-out;
+}
+.cards-mulheres{
+    padding-top: 5px;
+}
+.card-mulher:hover{
+    transform: translateY(-10px);
+}
+
+
+#famosas a{
+    text-decoration: none;
+    font-weight: normal;
+    color: black;
+    width: fit-content;
+}
+.card-mulher .img-mulher{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 105%;
+    clip-path: circle();
+    width: 130px;
+    height: 140px;
+}
+.card-mulher .label-mulher{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1em;
+    margin-top: 10px;
+    font-family: paragrafos;
+    letter-spacing: 1px;
+}
+#video-aulas{
+    width: 100%;
+    height: 430px;
+    background-color: #f87c7c;
+}
+.div-videoaula,.site-ensino,#famosas a,.card-cursos{
+    margin-left: 30px; 
+    font-family: paragrafos;
+    letter-spacing: 1px;
+}
+.cards-videoaulas,.cards-mulheres,.cards-sites,.cards-cursos{
+    display: flex;
+    padding-right: 30px;
+    overflow-x: scroll;
+       filter: drop-shadow(3px 3px 10px rgba(0, 0, 0, 0.616)); 
+}
+
+::-webkit-scrollbar{
+    background: rgba(0, 0, 0, 0);
+}
+.videoaula-thumb {
+    width: 500px;
+    height: 255px;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: black;
+    border-radius: 20px;
+
+}
+.videoaula-channel{
+    font-size: 1.4em;
+    margin: 15px 0px;
+    color: white;
+}
+.videoaula-description{
+    width: 100%;
+    font-size: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(192, 192, 191);
+    margin-top: -34px;
+}
+.videoaula-button-play{
+    background: url(../img/btn\ play.png) no-repeat;
+    justify-self: end;
+    background-position: 45% 50%;
+    background-size: 370%;
+    clip-path: circle();
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    transition: transform 300ms ease-in;
+    transition: filter 300ms ease-in;
+}
+.videoaula-button-play:hover{
+    filter: brightness(80%);
+    transform: scale(0.95);
+}
+.site-ensino{
+    cursor: pointer;
+    width: fit-content;
+    padding-bottom:10px;
+    transition: transform 200ms ease-in-out;
+}
+.cards-sites{
+    padding-top: 10px;
+}
+.site-ensino:hover{
+    transform: translateY(-10px);
+}
+.site-logo{
+    background-repeat: no-repeat;
+    background-color: rgb(0, 0, 0);
+    background-position: 50% ;
+    background-size: 100%;
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+}
+.site-label{
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.card-cursos{
+    background-color: rgb(202, 200, 200);
+    height: 250px;
+    width: 190px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: background 300ms ease;
+    cursor: pointer;
+}
+.card-cursos:hover{
+    background-color: rgb(175, 174, 174);
+}
+.cursos-image{
+    background-position:no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-color: black;
+    border-radius: 20px;
+    width: 145px;
+    height: 139px;
+    margin: 0px 7px;
+    margin-top: 10px;
+}
+.title-curso{
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.h1-logo{
+    height: 58px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-right-h1{
+width: 280px;
+height: 100px;
+background-image: url(../img/watermark.png);
+background-position: center;
+background-size: 170%;
+margin: auto;
+margin-right: 60px;
+
+}

@@ -1,0 +1,62 @@
+@font-face {
+    font-family: feminineidea;
+    src: url(../fontes/SunshineTropical.ttf);
+}
+@font-face {
+    font-family: cursiva;
+    src: url(../fontes/HelloValentina.ttf);
+}
+@font-face {
+    font-family: paragrafos;
+
+    src: url(../fontes/MasterFlash.otf);
+}
+
+section .paragrafo{
+    font-size: 3em;
+    font-family: cursiva;
+text-align: center;
+    padding: 10px 20px;
+
+}
+
+.site-ensino{
+    margin-left: 30px; 
+    font-family: paragrafos;
+    letter-spacing: 1px;
+}
+.cards-sites{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;    
+    filter: drop-shadow(3px 3px 10px rgba(0, 0, 0, 0.616)); 
+    width: fit-content;
+justify-content: center;
+}
+.site-ensino{
+    cursor: pointer;
+    width: fit-content;
+    padding-bottom:10px;
+    transition: transform 200ms ease-in-out;
+}
+.cards-sites{
+    padding-top: 10px;
+}
+.site-ensino:hover{
+    transform: translateY(-10px);
+}
+.site-logo{
+    background-repeat: no-repeat;
+    background-color: rgb(0, 0, 0);
+    background-position: 50% ;
+    background-size: 100%;
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+}
+.site-label{
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.2em;
+}

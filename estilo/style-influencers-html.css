@@ -1,0 +1,65 @@
+@font-face {
+    font-family: feminineidea;
+    src: url(../fontes/SunshineTropical.ttf);
+}
+@font-face {
+    font-family: cursiva;
+    src: url(../fontes/HelloValentina.ttf);
+}
+@font-face {
+    font-family: paragrafos;
+
+    src: url(../fontes/MasterFlash.otf);
+}
+#famosas .card-mulher{
+    height: fit-content;
+    width: fit-content;
+    cursor: pointer;
+}
+
+section .paragrafo{
+    font-size: 3em;
+    font-family: cursiva;
+text-align: center;
+    padding: 10px 20px;
+
+}
+
+#famosas a{
+    text-decoration: none;
+    font-weight: normal;
+    color: black;
+    width: fit-content;
+}
+.card-mulher .img-mulher{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 105%;
+    clip-path: circle();
+    width: 140px;
+    height: 140px;
+}
+#famosas a{
+    margin-left: 30px; 
+    font-family: paragrafos;
+    letter-spacing: 1px;
+}
+.card-mulher .label-mulher{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1em;
+    margin-top: 10px;
+    font-family: paragrafos;
+    letter-spacing: 1px;
+}
+.cards-mulheres{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;    
+    filter: drop-shadow(3px 3px 10px rgba(0, 0, 0, 0.616)); 
+    width: fit-content;
+justify-content: center;
+}
+::-webkit-scrollbar{
+    background: rgba(0, 0, 0, 0);
+}

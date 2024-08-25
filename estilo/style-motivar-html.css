@@ -1,0 +1,98 @@
+#video-aulas{
+    width: 100%;
+    height: 430px;
+    background-color: #f87c7c;
+}
+.div-videoaula,.card-frase{
+    margin-left: 30px; 
+    font-family: paragrafos;
+    letter-spacing: 1px;
+}
+section .paragrafo{
+    font-size: 1.8em;
+    font-family: paragrafos;
+    margin-bottom: 0px;
+    padding: 10px 20px;
+
+}
+.cards-videoaulas{
+    display: flex;
+    padding-right: 30px;
+    overflow-x: scroll;
+    filter: drop-shadow(3px 3px 10px rgba(0, 0, 0, 0.616)); 
+}
+.cards-frases{
+    display: flex;
+    padding-right: 30px !important;
+    overflow-x: scroll;
+    filter: drop-shadow(3px 3px 10px rgba(0, 0, 0, 0.616)); 
+}
+
+::-webkit-scrollbar{
+    background: rgba(0, 0, 0, 0);
+}
+.videoaula-thumb {
+    width: 500px;
+    height: 255px;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: black;
+    border-radius: 20px;
+
+}
+.videoaula-channel{
+    font-size: 1.4em;
+    margin: 15px 0px;
+    color: white;
+}
+.videoaula-description{
+    width: 100%;
+    font-size: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(192, 192, 191);
+    margin-top: -34px;
+}
+.videoaula-button-play{
+    background: url(../img/btn\ play.png) no-repeat;
+    justify-self: end;
+    background-position: 45% 50%;
+    background-size: 370%;
+    clip-path: circle();
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    transition: transform 300ms ease-in;
+    transition: filter 300ms ease-in;
+}
+.videoaula-button-play:hover{
+    filter: brightness(80%);
+    transform: scale(0.95);
+}
+.cards-frases{
+    padding: 10px 0px;
+}
+.card-frase{
+    min-width: 300px;
+    height: 320px;
+    padding: 20px;
+    box-shadow: 1px 1px 10px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+.titulo-frase{
+ font-family: cursiva;  
+ font-size: 2.5em; 
+text-align: center;
+line-height: 1em;
+}
+.frase-card{
+
+font-size: 1.2em;
+}
