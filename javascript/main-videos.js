@@ -134,9 +134,9 @@ function CriarCardVideos(item) {
     thumb_video.style.backgroundImage = `url(${item.imageUrl})`;
     description_video.appendChild(btn_play);
     btn_play.className = "videoaula-button-play";
-    btn_play.addEventListener("click",() =>{
-        window.location.href = item.link;
-    })
+    btn_play.onclick = () => {
+        window.open(item.link, '_blank');
+    }
 }
 
 

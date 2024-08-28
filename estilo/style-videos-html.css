@@ -19,30 +19,27 @@
 section .paragrafo{
     font-size: 3em;
     font-family: cursiva;
-text-align: center;
+    text-align: center;
     padding: 10px 20px;
 }
 .div-videoaula{
-    margin-left: 30px; 
+
     font-family: paragrafos;
     letter-spacing: 1px;
 }
 #video-aulas{
     width: 100%;
-
     margin-bottom: 30px;
 }
-.div-videoaula{
-    margin-left: 30px;
-}
+
 .cards-videoaulas{
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     filter: drop-shadow(3px 3px 10px rgba(0, 0, 0, 0.616)); 
+    gap: 20px;
 }
-::-webkit-scrollbar{
-    background: rgba(0, 0, 0, 0);
-}
+
 .videoaula-thumb {
     width: 438.2px;
     height: 245px;
@@ -54,13 +51,14 @@ text-align: center;
 }
 .videoaula-channel{
     font-size: 1.4em;
-    margin: 15px 0px;
+    margin-top: 10px;
+    margin-bottom: 25px;
     width: fit-content;
 }
 .videoaula-description{
     width: 100%;
     font-size: 1em;
-    line-height: 1em;
+    line-height: 1.1em;
     display: flex;
     justify-content: space-between;
     align-items: center;

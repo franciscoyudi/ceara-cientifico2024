@@ -14,7 +14,7 @@ backToTopBtn.addEventListener('click', scrollToTop);
 
 // Monitora o scroll da página
 window.onscroll = function () {
-    const section3 = document.getElementById("famosas");
+    const section3 = document.querySelector(".dashboard");
     const rect = section3.getBoundingClientRect();
     if (rect.top <= 0) { // Se a segunda seção está no topo ou acima do topo da janela
         backToTopBtn.style.display = "block"; // Mostra o botão

@@ -9,6 +9,11 @@ const div_cards_cursos = document.querySelector('div.cards-cursos');
 
 const db_mulheres = [
     {
+        nome: "Karol Attekita",
+        link: "https://www.instagram.com/attekitadev/",
+        imageUrl: "img/ATTEKITA.jpg",
+    },
+    {
         nome: "Adriana Saty",
         link: "https://instagram.com/adriana.saty",
         imageUrl: "img/ADRIANASATY.jpg",
@@ -67,6 +72,18 @@ const db_videos = [
         link: "https://www.youtube.com/watch?v=Ejkb_YpuHWs&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n",
     },
     {
+        channel: "DIO",
+        description: "Como virei programadora em MENOS DE <br>1 ANO sem computador",
+        imageUrl: "https://i.ytimg.com/vi/iQWViNgGpY4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCgSUs3Hgh5Lo684xVi-s_yiVNxhw",
+        link: "https://www.youtube.com/watch?v=iQWViNgGpY4",
+    },
+    {
+        channel: "Curso em Video",
+        description: "Curso de Python",
+        imageUrl: "https://i.ytimg.com/vi/S9uPNppGsGo/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBdufuoJdaVhVi1j6gQJgfUqD0T8w",
+        link: "https://www.youtube.com/watch?v=S9uPNppGsGo&list=PLvE-ZAFRgX8hnECDn1v9HNTI71veL3oW0",
+    },
+    {
         channel: "Matheus Battisti - Hora de Codar",
         description: "Se não aprender JAVA agora, desista. - Curso de Java",
         imageUrl: "https://i.ytimg.com/vi/TkD0QMyBa28/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBmwloGYr9I3QN60TY32nbEwkDpXA",
@@ -77,18 +94,6 @@ const db_videos = [
         description: "Playlist curso de PHP",
         imageUrl: "https://i.ytimg.com/vi/O73xbQvGhHk/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDtoZmJ-2U-IGPKnOeMJ1RPckLQ2g",
         link: "https://www.youtube.com/watch?v=O73xbQvGhHk&list=PL0N5TAOhX5E9eJ9Ix6YUIgEw3lNmaIEE9",
-    },
-    {
-        channel: "Curso em Video",
-        description: "Curso de Python",
-        imageUrl: "https://i.ytimg.com/vi/S9uPNppGsGo/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBdufuoJdaVhVi1j6gQJgfUqD0T8w",
-        link: "https://www.youtube.com/watch?v=S9uPNppGsGo&list=PLvE-ZAFRgX8hnECDn1v9HNTI71veL3oW0",
-    },
-    {
-        channel: "DIO",
-        description: "Como virei programadora em MENOS DE <br>1 ANO sem computador",
-        imageUrl: "https://i.ytimg.com/vi/iQWViNgGpY4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCgSUs3Hgh5Lo684xVi-s_yiVNxhw",
-        link: "https://www.youtube.com/watch?v=iQWViNgGpY4",
     },
 ]
 const db_sites = [
@@ -182,6 +187,7 @@ function CriarCardMulheres(item) {
     label_mulher.innerText = item.nome;
     img_mulher.style.backgroundImage = `url(${item.imageUrl})`;
     criar_linktag.href = `${item.link}`
+    criar_linktag.target = "_blank"
 }
 function CriarCardVideos(item) {
     let criar_div = document.createElement("div");
@@ -206,9 +212,9 @@ function CriarCardVideos(item) {
     thumb_video.style.backgroundImage = `url(${item.imageUrl})`;
     description_video.appendChild(btn_play);
     btn_play.className = "videoaula-button-play";
-    btn_play.addEventListener("click",() =>{
-        window.location.href = item.link;
-    })
+    btn_play.onclick = () => {
+        window.open(item.link, '_blank');
+    }
 }
 function CriarCardSitesGratuitos(item) {
     let criar_div = document.createElement("div");
@@ -221,7 +227,7 @@ function CriarCardSitesGratuitos(item) {
     criar_div.appendChild(site_label);
     site_label.className = "site-label"
     site_logo.style.backgroundImage = `url(${item.imageUrl})`;
-    site_label.innerText = item.labelSite;
+    site_label.innerHTML = item.labelSite;
     criar_div.onclick = () => {
         window.open(item.link, '_blank');
     }

@@ -21,7 +21,7 @@
     margin-left: 10px;
     margin-top: 3px;
     width: fit-content;
-line-height: 35px;
+    line-height: 35px;
 }
 section .paragrafo{
     font-size: 1.4em;
@@ -42,7 +42,11 @@ section .paragrafo{
 .card-mulher:hover{
     transform: translateY(-10px);
 }
+.videoaula-paragrafo{
+    color: white;
+    text-shadow: 1px 2px 10px black;
 
+}
 
 #famosas a{
     text-decoration: none;
@@ -69,6 +73,7 @@ section .paragrafo{
 #video-aulas{
     width: 100%;
     height: 430px;
+    padding-top: 10px;
     background-color: #f87c7c;
 }
 .div-videoaula,.site-ensino,#famosas a,.card-cursos{
@@ -78,12 +83,13 @@ section .paragrafo{
 }
 .cards-videoaulas,.cards-mulheres,.cards-sites,.cards-cursos{
     display: flex;
+    padding-bottom: 20px;
     padding-right: 30px;
     overflow-x: scroll;
        filter: drop-shadow(3px 3px 10px rgba(0, 0, 0, 0.616)); 
 }
 
-::-webkit-scrollbar{
+.cards-videoaulas::-webkit-scrollbar,.cards-mulheres::-webkit-scrollbar,.cards-sites::-webkit-scrollbar,.cards-cursos::-webkit-scrollbar{
     background: rgba(0, 0, 0, 0);
 }
 .videoaula-thumb {
@@ -201,5 +207,41 @@ background-position: center;
 background-size: 170%;
 margin: auto;
 margin-right: 60px;
+
+}
+@media(width < 800px){
+    header{
+        margin-bottom: 30px !important;
+    }
+    .dashboard h1{
+
+        font-size: 2.3em;
+
+        line-height: 28px;
+        margin-bottom: 40px;
+    }
+    .logo-right-h1{
+        width: 280px;
+        height: 60px;
+        background-image: url(../img/watermark.png);
+        background-position: center;
+        background-size: 170%;
+        margin: auto;
+        margin-right: 10px;
+        
+        }
+        .videoaula-thumb {
+            width: 350px;
+        
+        }
+        .videoaula-channel{
+            font-size: 1em;
+
+        }
+        .videoaula-description{
+            width: 100%;
+            font-size: 1em;
+
+        }
 
 }

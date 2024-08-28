@@ -2,6 +2,11 @@ const div_cards_mulheres = document.querySelector('div.cards-mulheres');
 
 const db_mulheres = [
     {
+        nome: "Karol Attekita",
+        link: "https://www.instagram.com/attekitadev/",
+        imageUrl: "img/ATTEKITA.jpg",
+    },
+    {
         nome: "Adriana Saty",
         link: "https://instagram.com/adriana.saty",
         imageUrl: "img/ADRIANASATY.jpg",
@@ -128,6 +133,7 @@ function CriarCardMulheres(item) {
     label_mulher.innerText = item.nome;
     img_mulher.style.backgroundImage = `url(${item.imageUrl})`;
     criar_linktag.href = `${item.link}`
+    criar_linktag.target = "_blank"
 }
 db_mulheres.map(function (item) {
     CriarCardMulheres(item)

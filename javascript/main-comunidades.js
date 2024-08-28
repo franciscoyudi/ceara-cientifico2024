@@ -14,6 +14,7 @@ const lista_comu = [
 ]
 
 const div_cards_comunidades = document.querySelector(".comunidade-cards-div")
+
 function CriarCardComunidade(comu){
     const criar_card_comunidade = document.createElement("div")
     const img_card = document.createElement("div")
@@ -32,9 +33,9 @@ function CriarCardComunidade(comu){
     criar_div_desc.appendChild(title_card)
     criar_div_desc.appendChild(desc_card)
 
-criar_card_comunidade.onclick = () => {
-    window.location.href = `${comu.link}`
-}
+    criar_card_comunidade.onclick = () => {
+        window.open(comu.link, '_blank');
+    }
 
     img_card.style.backgroundImage = `url(${comu.imageUrl})`;
     desc_card.innerText = comu.desc;
