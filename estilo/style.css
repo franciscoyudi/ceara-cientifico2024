@@ -45,7 +45,6 @@ section .paragrafo{
 .videoaula-paragrafo{
     color: white;
     text-shadow: 1px 2px 10px black;
-
 }
 
 #famosas a{
@@ -244,4 +243,19 @@ margin-right: 60px;
 
         }
 
+}
+@media(width < 425px){
+    .videoaula-thumb {
+        width: 300px;
+        height: 220px;
+    }
+    .videoaula-channel{
+        font-size: 1em;
+
+    }
+    .videoaula-description{
+        width: 100%;
+        font-size: 0.9em;
+margin-top: -25px;
+    }
 }
